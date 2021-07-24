@@ -1,7 +1,17 @@
 <template>
+  <div>
   <Tutorial/>
+  <NuxtLogo/>
+  </div>
+
 </template>
 
+
 <script>
-export default {}
+import NuxtLogo from '~/components/NuxtLogo.vue'
+export default {
+  components: {
+    NuxtLogo
+  }
+}
 </script>
