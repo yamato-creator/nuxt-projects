@@ -1,7 +1,19 @@
 <template>
-  <Tutorial/>
+  <div>
+    <Counter></Counter>
+    <hr>
+    <Counter></Counter>
+    <hr>
+    <Counter></Counter>
+    <hr>
+  </div>
 </template>
 
 <script>
-export default {}
+import Counter from '~/components/Counter.vue'
+export default {
+  componetns: {
+    Counter
+  }
+}
 </script>
