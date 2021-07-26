@@ -1,17 +1,17 @@
 <template>
-  <div>
-  <Tutorial/>
-  <NuxtLogo/>
+  <div class="container">
+      <p>{{ message }}</p>
+      <hr>
+      <router-link to="/price">Price Page</router-link>
   </div>
-
 </template>
 
-
 <script>
-import NuxtLogo from '~/components/NuxtLogo.vue'
 export default {
-  components: {
-    NuxtLogo
+  data: function(){
+    return {
+      message: 'hello world!!!'
+    }
   }
 }
 </script>
